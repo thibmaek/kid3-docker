@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  kid3:
+    build: .
+    container_name: kid3
+    volumes:
+      - ./config:/config:rw
+      - ./music:/music:rw
+    ports:
+     - 5800:5800
