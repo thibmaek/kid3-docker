@@ -2,12 +2,14 @@
 
 baseimage-gui image with Kid3 installed.
 
+__This image is available on both Docker Hub and Github Container Registry. Please use ghcr since the Docker hub one might dissapear at any given time.__
+
 ## Installing
 
 ### Via Docker Registry
 
 ```shell
-$ docker pull thibmaek/kid3
+$ docker pull ghcr.io/thibmaek/kid3-docker
 $ docker run -itd -v ./music:/music:rw -v ./config:/config:rw --name kid3 thibmaek/kid3
 ```
 

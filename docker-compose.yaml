@@ -2,7 +2,7 @@ version: '2'
 
 services:
   kid3:
-    image: thibmaek/kid3
+    image: ghcr.io/thibmaek/kid3-docker
     container_name: kid3
     volumes:
       - ./config:/config:rw
